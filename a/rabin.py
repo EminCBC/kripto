@@ -30,18 +30,6 @@ def coz(c,p=32416185343,q=32416185371):
     print (tos(s1))
     print (tos(s2))
 '1747 6863 32416185343 32416185371'
-def isprime(a):
-    i,prime=3,1
-    if(a<2):
-        prime=0
-    if a!=2 and a%2==0:
-        prime=0
-    while prime!=0 and i<=a**(1/2):
-        if a%i==0:
-            prime=0
-            break
-        i += 2
-    return(prime)
 
 def toi(text):
     x=''
