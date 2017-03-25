@@ -1,6 +1,6 @@
 import math
 print ("1747 6863 32416185343 32416185371")
-def sifrele(text,p=32416185343,q=32416185371):
+def sifrele(text,p=6171054912832631,q=7897466719774591):
     text=toi(text)
     n=p*q
     c=pow(text,2,n)
@@ -17,7 +17,7 @@ def ex_gcd(a,b):
         (old_t,t) = (t, old_t - bolum*t)
     return (old_s,old_t)
 
-def coz(c,p=32416185343,q=32416185371):
+def coz(c,p=6171054912832631,q=7897466719774591):
     mp=pow(int(c),int((p+1)/4),int(p))
     mq=pow(int(c),int((q+1)/4),int(q))
     (yp,yq) =ex_gcd(p,q)
