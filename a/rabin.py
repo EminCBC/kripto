@@ -29,22 +29,27 @@ def coz(c,p=32416185343,q=32416185371):
     print (tos(r2))
     print (tos(s1))
     print (tos(s2))
-'1747 6863 32416185343 32416185371'
 
 def toi(text):
     x=''
     for i in text:
+        if ord(i)<100:
+            x=x+'0'
+            if ord(i)<10:
+                x=x+'0'
         x=x+str(ord(i))
     return int(x)
 
 def tos(sayi):
     m=str(sayi)
     y=''
-    for i in range(0,len(m)-1,2):
-        y=y + chr (int(m[i] + m[i+1]))
+    if len(m)%3 !=0:
+        m='0' + m
+    for i in range(0,len(m)-2,3):
+        y=y + chr (int(m[i] + m[i+1] + m[i+2]))
     return y
         
-            
+             
 
 
 
